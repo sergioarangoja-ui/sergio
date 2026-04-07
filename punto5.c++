@@ -1,20 +1,32 @@
 #include <iostream>
 using namespace std;
 int main()
-{
-int n;
-cin >> n;
-double *a = new double[n];
+ {
+int op;
+cin >> op;
 
-for(int i=0;i<n;i++){
-    cin >> a[i];
+if(op == 1){
+    double r;
+    cin >> r;
+    cout << 3.14*r*r;
 }
-double suma=0;
+else if(op == 2){
+    int n, f=1;
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        f=f*i;
+    }
+    cout << f;
+}
+else{
+    int n;
+    cin >> n;
+    if(n%2==0)
+        cout << "Par";
+    else
+        cout << "Impar";
+}
+return 0;
+}
 
-for(int i=0;i<n;i++){
-    suma += a[i];
-}
-cout << suma/n;
-delete[] a;
-retun 0;
-}
+
