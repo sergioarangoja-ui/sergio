@@ -1,6 +1,7 @@
-#include <iostream>
+#include 
 using namespace std;
-int main() {
+int main() 
+{
 double num1, num2;
 double suma, resta, multiplicacion, division;
 cout << "Ingrese el primer numero: ";
